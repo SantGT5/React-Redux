@@ -1,4 +1,6 @@
-const reducer = (state = 0, action) => {
+
+
+export const reducer = (state = 0, action) => {
   switch (action.type) {
     case "deposit":
       return state + action.payload;
@@ -8,5 +10,3 @@ const reducer = (state = 0, action) => {
       return state;
   }
 };
-
-export default reducer;
